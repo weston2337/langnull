@@ -22,7 +22,7 @@ The `language_country_codes.txt` file contains two unique patterns which use `//
 They were specifically meant for http-checked subdomains and they will remove any line in a subdomains file if there's a country code between `http(s)://{here}.blabla.com` or
 `http(s)://{here}-dev.blabla.com`.
 
-By that being said, you don't have to worry what comes after the `http(s)://` since I already added pretty much every single logical combination there could be.
+By that being said, you don't have to worry what comes after the `http(s)://` since I already added pretty much every single logical combination there could be, but you can always add more. 😊
 
 ### Example Usage:
 `$ cat subdomains-probe.txt | langnull`
