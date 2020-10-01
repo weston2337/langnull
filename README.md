@@ -5,7 +5,7 @@ Guide to filter out subdomains that contain language and country codes of ISO-63
 1. Simply download the `language_country_codes.txt` file or use a `wget` on the raw file.
 2. Lastly, use it on a subdomain list:
 
-`$ cat subdomains.txt | grep -v -i -f language_country_codes.txt`
+`$ cat subdomains.txt | grep -v -f language_country_codes.txt`
 
 ### Optional
 You could also add a function in your bash profile.
@@ -13,7 +13,7 @@ I simply added a couple lines in my ~/.profile
 
 ```
 langnull(){
-  grep -v -i -f /path/to/language_country_codes.txt
+  grep -v -f /path/to/language_country_codes.txt
 }
 ```
 
